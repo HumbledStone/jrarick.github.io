@@ -1,0 +1,165 @@
+/* Color palette
+primary color: #99D3DF
+secondary color: #88BBD6
+tertiary color: #CDCDCD
+quaternary color: #E9E9E9 */
+
+/* Universal styling */
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  background: #E9E9E9;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* Main header styling */
+.banner {
+  padding-bottom: 40px;
+}
+
+#main-header {
+  margin: 30px 0;
+  font-size: 32pt;
+}
+
+
+
+/* Svg styling */
+#josh-avatar {
+  border-radius: 50%;
+  width: 15%;
+  min-width: 125px;
+  height: auto;
+  margin-top: 40px;
+  transition: .7s cubic-bezier(.7, -0.6, .3, 1.6);
+}
+
+#josh-avatar:hover {
+  transform: scale(1.3);
+}
+
+.svg-icon {
+  fill: white;
+  transition: .2s ease-in-out;
+}
+
+.logo:hover .svg-icon {
+  transform: scale(0.9);
+  transform-origin: 50% 50%;
+}
+
+.contact {
+  margin: 0 20px;
+}
+
+
+
+/* Night/Day setting styling */
+#setting {
+  text-align: left;
+}
+
+.day-banner {
+  background-image: linear-gradient(#88BBD6, #99D3DF, #E9E9E9);
+}
+
+.night-banner {
+  background-image: linear-gradient(grey, black);
+}
+
+.night-background {
+  background: black;
+}
+
+.day-project-div {
+  background-image: linear-gradient(#88BBD6, #99D3DF);
+}
+
+.night-project-div {
+  background-image: linear-gradient(grey, #333333);
+}
+
+.day-sub-header {
+  color: #99D3DF;
+  text-shadow: 1px 1px #88BBD6;
+}
+
+.night-sub-header {
+  color: white;
+  text-shadow: 1px 1px grey;
+}
+
+.day-contact-item {
+  color: #88BBD6;
+}
+
+.night-contact-item {
+  color: white;
+}
+
+
+
+/* Container styling */
+.sub-header {
+  font-size: 22pt;
+}
+
+#project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-div {
+  min-width: 300px;
+  width: 45%;
+  padding: 0 15px 24px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.project-header {
+  font-size: 18pt;
+}
+
+
+
+/* Contact styling */
+#website-link {
+  color: #99D3DF;
+}
+
+#contact-info {
+  list-style: none;
+  margin-bottom: 100px;
+}
+
+
+
+/* Media queries */
+@media (min-width: 768px) {
+  #main-header {
+    font-size: 48pt;
+  }
+
+  .sub-header {
+    font-size: 28pt;
+  }
+
+  #project-container {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+}
